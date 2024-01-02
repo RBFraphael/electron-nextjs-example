@@ -1,0 +1,9 @@
+appId: "io.github.rbfraphael.electron-nextjs-example"
+productName: "Electron Next.JS Example"
+copyright: "Copyright (c) 2024 RBFraphael"
+win:
+  target: ["dir", "portable"]
+linux:
+  target: ["dir", "appimage"]
+mac:
+  target: ["dir", "dmg"]

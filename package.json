@@ -1,0 +1,33 @@
+{
+  "name": "electron-nextjs-example",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main/main.js",
+  "author": {
+    "email": "rbfraphael@gmail.com",
+    "name": "RBFraphael",
+    "url": "https://rbfraphael.github.io"
+  },
+  "description": "Lorem ipsum dolor sit amet",
+  "scripts": {
+    "dev": "concurrently -n \"NEXT,ELECTRON\" -c \"yellow,blue\" --kill-others \"next dev\" \"electron .\"",
+    "build": "next build && electron-builder",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "electron-serve": "^1.2.0",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "concurrently": "^8.2.2",
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1",
+    "typescript": "^5"
+  }
+}
